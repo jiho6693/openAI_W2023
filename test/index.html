@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Digital Art Gallery</title>
+    <style>
+      /* Add your CSS styles here */
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin: 40px 0 20px 0;
+      }
+
+      .artwork-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 0;
+      }
+
+      .artwork {
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        border: 1px solid gray;
+      }
+
+      .artwork img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Digital Art Gallery</h1>
+    <div class="artwork-container">
+      <!-- Add your artworks here -->
+      <div class="artwork">
+        <img src="1.jpg" alt="Artwork 1">
+      </div>
+     
+      <!-- Add more artworks as needed -->
+    </div>
+  </body>
+</html>
+This code provides a basic layout for a website that showcases digital art. The artwork-container class uses flexbox to display the artworks in a grid and center them on the page. You can add or remove artworks by adding or removing the .artwork elements as needed.
+
+Note: This code is just a starting point and you may need to make further modifications to meet your specific needs. Feel free to add, remove, or modify the styles as needed.
+
+
+
+
+jiho6693@gmail.com
+Make a code for my website which is for digital artists, where images are moving
+Here is an example of HTML, CSS, and JavaScript code to create a website for digital artists with moving images:
+
+php
+Copy code
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Digital Art Gallery</title>
+    <style>
+      /* Add your CSS styles here */
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin: 40px 0 20px 0;
+      }
+
+      .artwork-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 0;
+      }
+
+      .artwork {
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        border: 1px solid gray;
+        position: relative;
+      }
+
+      .artwork img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 2s linear;
+      }
+
+      .artwork:hover img {
+        transform: rotate(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Digital Art Gallery</h1>
+    <div class="artwork-container">
+      <!-- Add your artworks here -->
+      <div class="artwork">
+        <img src="1.jpg" alt="Artwork 1">
+      </div>
+      <div class="artwork">
+        <img src="1.jpg" alt="Artwork 2">
+      </div>
+      <!-- Add more artworks as needed -->
+    </div>
+  </body>
+</html>
